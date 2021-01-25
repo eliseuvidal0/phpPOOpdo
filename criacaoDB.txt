@@ -1,0 +1,26 @@
+
+/*
+Script para cria��o do DB MySql
+*/
+
+
+
+
+CREATE DATABASE sysCliente
+default character set utf8
+default collate utf8_general_ci;
+
+USE sysCliente;
+
+CREATE TABLE clientes (
+	id smallint(6) PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(40) NOT NULL,
+	email varchar(50) NOT NULL,
+	cep varchar(10) NOT NULL,
+	rua varchar(30) NOT NULL,
+	bairro varchar(30) NOT NULL,
+	cidade varchar(30) NOT NULL,
+	uf varchar(3) NOT NULL,
+	celular varchar(15) NOT NULL,
+	data_nascimento date NOT NULL
+) default charset = utf8;
